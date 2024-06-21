@@ -13,7 +13,7 @@ module.exports = async function (params) {
   const { message, parentMessageId } = params;
 
   const api = new ChatGPTAPI({ apiKey: process.env.CHAT_GPT_API_KEY });
-  const api = new ChatGPTAPI({ apiKey: process.env.CHAT_GPT_API_KEY });
+  const api = new ChatGPTAPI({ apiKey: process.env.my_api_key });
   let result;
 
   if (parentMessageId) {
